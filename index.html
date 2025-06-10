@@ -1,0 +1,172 @@
+<html>
+<head>
+	<title>AMO VOCÊ</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<style type="text/css">
+
+	#tela-preta {
+      display: none;
+      position: fixed;
+      top: 0; left: 0;
+      width: 100vw;
+      height: 100vh;
+      background-color: black;
+      z-index: 9999;
+      overflow: auto;
+      padding: 20px;
+      box-sizing: border-box;
+      color: white;
+      text-align: center;
+    }
+
+    #tela-preta img {
+      width: 200px;
+      height: auto;
+      margin: 10px;
+      border: 3px solid white;
+      border-radius: 8px;
+    }
+
+    #btnMostrar {
+      padding: 10px 20px;
+      font-size: 18px;
+      cursor: pointer;
+      margin-top: 20px;
+      animation: moverLados 2s infinite alternate ease-in-out;
+    }
+
+    #btnVoltar {
+      background-color: white;
+      color: black;
+      border: none;
+      border-radius: 4px;
+      position: relative;
+      animation: moverLados 2s infinite alternate ease-in-out;
+    }
+
+    @keyframes moverLados {
+      0%   { left: 0; }
+      100% { left: 200px; }
+    }
+
+		body{
+			background-color: black;
+		}
+		.agiote{
+			background-color: whitesmoke;
+			border: 2px solid black;
+			color:  black;
+			border-radius: 10px;
+			box-shadow: 0 8px 16px rgba(0, 0, 0, 0.25), 
+              0 4px 6px rgba(0, 0, 0, 0.1);
+		}
+		.mes{
+			PADDING-Bottom: 4px;
+			padding-top: 4px;
+			align-items: center;
+			align-content:  center;
+			background-color: gold;
+			border-color: black;
+			width: 65px;
+			box-shadow: 0 8px 16px rgba(0, 0, 0, 0.25), 
+              0 4px 6px rgba(0, 0, 0, 0.1);
+		}
+
+		.escolha{
+			padding-bottom: 10px;
+			padding-top: 4px;
+		}
+
+		.principal{
+			background-color: blanchedalmond;
+			border:  4px solid maroon;
+			height: 470px;
+			width: 360px;
+			font-size: 10px;
+		}
+		.txt{
+			text-align: left;
+		}
+
+		 .quando{
+		 	color: white;
+		 }
+
+	</style>
+</head>
+<body background-color:#000000>
+	<center>
+		<div class="agiote">
+<h1>Para a Minha Eterna e Melhor Escolha </h1>
+<h2>Carina adriely</h2>
+</center>
+</div>
+<center>
+<div class="escolha">
+	<button class="mes">Mês 1</button>
+	<button class="mes">Mês 2</button>
+	<button class="mes">Mês 3</button>
+	<button class="mes">Mês 4</button>
+	<button class="mes">Mês 5</button>
+	<button class="mes">Mês 6</button>
+	<button class="mes">Mês 7</button>
+	<button class="mes">Mês 8</button>
+	<button class="mes">Mês 9</button>
+	<button class="mes">Mês 10</button>
+	<button class="mes">Mês 11</button>
+	<button class="mes">Mês 12</button>
+	</div>
+	<iframe width="560" height="150" src="https://www.youtube.com/embed/BBUdg9S4Ii4?si=8bzua0HQOHYxhfBD" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+		<h1 class="quando">Quando Estiver Triste, Venha Aqui!</h1>
+	<div class="principal">
+		<h2 class="txt">Oi, meu amor,
+
+Eu tava aqui pensando em você (de novo) e senti vontade de escrever um pouco do que tô sentindo.</br>
+Às vezes fica tudo preso aqui dentro, sabe? Mas hoje decidi deixar sair.</br></br>
+
+Amar você é uma das coisas mais incríveis que já me aconteceu. 
+</br>É tipo um abracinho na alma, uma paz boa no meio da correria da vida. </br>
+</br>
+Seu sorriso melhora qualquer dia meu, e sua voz acalma até quando tá tudo virado do avesso.</br>
+
+Gosto de tudo em você. Dos jeitos, das manias, das conversas, até dos silêncios. </br></br>
+Gosto da forma como a gente se entende, se cuida, se olha. Com você, tudo parece mais leve, mais bonito, mais verdadeiro.</br></br>
+
+Eu não sei o que o futuro reserva, mas sei que quero viver cada pedacinho dele com você. </br>
+Rir junto, chorar junto, crescer junto. Tô aqui, de verdade. E o que sinto por você só aumenta.</br></br>
+
+Com carinho (e muito amor),
+[Nicolas]
+
+</h2>
+		<h2></h2>
+
+	</div>
+</center>
+
+<button id="btnMostrar">Surpresa!</button>
+
+  <div id="tela-preta">
+    <!-- Coloque as URLs das fotos abaixo -->
+    <img src="foto1.jpeg" alt="Foto 1">
+    <img src="foto2.jpeg" alt="Foto 2">
+    <img src="foto3.jpeg" alt="Foto 3">
+    <img src="foto4.jpeg" alt="Foto 4">
+    <img src="foto5.jpeg" alt="Foto 5">
+    <button id="btnVoltar">Voltar</button>
+  </div>
+<script>
+   const telaPreta = document.getElementById("tela-preta");
+    const btnMostrar = document.getElementById("btnMostrar");
+    const btnVoltar = document.getElementById("btnVoltar");
+
+    btnMostrar.onclick = () => {
+      telaPreta.style.display = "block";
+    };
+
+    btnVoltar.onclick = () => {
+      telaPreta.style.display = "none";
+    };
+  </script>
+</body>
+</html>
